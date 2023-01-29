@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Acme,sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    position: sticky;
+    height: 20%;
+    display: flex;
+    padding: 10px 5vh;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+.navbar h2{
+    font-size: 32px;
+    color: rgba(0,0,0,.6);
+    cursor: pointer;
+    margin-left: 5vh;
+}
+.navbar h2 span{
+    color: #ff004f;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,.6);
+    font-size: 17px;
+    margin-right: 50px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    
+    width: 100%;
+}
+nav ul li a:hover{
+    color: #ff004f;
+}
+.active::after{
+    width: 100%;
+    color: #ff004f;
+}
+#home{
+    height: 100%;
+    width: 100%;
+    background-image: url(img/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.text1{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 50px;
+    width: 40%;
+    color: #fff;
+    font-size: 25px;
+}
+#donate{
+    position: absolute;
+    margin-top: 21%;
+    margin-left: 250px;
+    background-color: #ff004f;
+    color: #fff;
+    padding: 10px;
+    font-size: 25px;
+}
+#donate:hover{
+    background-color: white;
+    color:black;
+}
+#about{
+    margin-top: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#about h2{
+    margin-bottom: 15px;
+}
+#about h2 span{
+    text-decoration: underline;
+    text-decoration-color: #ff004f;
+    text-decoration-thickness:5px;
+}
+.card{
+    height: 150%;
+}
+#contact{
+    margin-top: 180px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+footer{
+    margin-top: 25px;
+}
