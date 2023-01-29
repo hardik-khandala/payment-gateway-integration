@@ -83,14 +83,6 @@ nav ul li a:hover{
     position: absolute;
     margin-top: 21%;
     margin-left: 250px;
-    background-color: #ff004f;
-    color: #fff;
-    padding: 10px;
-    font-size: 25px;
-}
-#donate:hover{
-    background-color: white;
-    color:black;
 }
 #about{
     margin-top: 40px;
